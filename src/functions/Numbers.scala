@@ -15,6 +15,8 @@ object Numbers {
 
   }
 
-  def Numbers(inp1: Double, inp2: Double): 
+  def Numbers(inp1: Double, inp2: Double): (Double, Double) => Double = {
+    
+  }
 
 }
