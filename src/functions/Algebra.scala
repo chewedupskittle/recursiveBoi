@@ -8,16 +8,16 @@ object Algebra {
       emptyLis
     }
     else {
-        val factList: List[Int] = (for (n <- 2 until input if input % n == 0) yield n).toList
-        if(factList.isEmpty){
-          List(input)
+      val factList: List[Int] = (for (n <- 2 until input if input % n == 0) yield n).toList
+      if(factList.isEmpty){
+        List(input)
       }
-        else{
-          val newPrime: Int = factList.head
-          val newNum:Int = input / newPrime
-          val lis: List[List[Int]] = List(List(newPrime), factor(newNum))
-          lis.flatten
-        }
+      else{
+        val newPrime: Int = factList.head
+        val newNum:Int = input / newPrime
+        val lis: List[List[Int]] = List(List(newPrime), factor(newNum))
+        lis.flatten
+      }
     }
   }
 
